@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: antiquewhite;
+        width: 50%;
+        text-align: left;
+    }
+    div a {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        padding: 15px;
+        display: inline;}
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul li {
+        display: block;
+    }
+    ul li:hover {
+        background-color: rgb(178, 126, 57);
+    }
+    ul li:hover ul {
+        display: inline-block;
+    }
+    ul li ul {
+        position: absolute;
+        display: none;
+        width: 200px;
+    }
+    ul li ul li {
+        display: inline-block;
+        background-color: rgb(219, 201, 176);
+    }
+    ul li ul li a {
+        display: inline !important;
+    }
+    ul li ul li:hover { background-color: rgb(159, 126, 80);}
+
+</style>
+<body>
+    <div class="dropbox">
+        <ul>
+            <li><a href="#1">Croissant</a>
+            <ul>
+                <li><a href="#2">Croissant 1</a></li>
+                <li><a href="#3">Croissant 2</a></li>
+                <li><a href="#4">Croissant 3</a></li>
+            </ul>
+            </li>
+            <li><a href="#5">Crepe</a></li>
+            <li><a href="#6">Macaron</a></li>
+        </ul>
+    </div>
+</body>
+</html>
